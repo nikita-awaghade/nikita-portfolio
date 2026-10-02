@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikita Awaghade | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    body {
+        
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 40px;
+    }
+    h1 {
+        color: #333;
+    }
+
+    h2 {
+        color: #555;
+    }
+
+    p, li {
+        font-size: 18px;
+    
+    }
+    nav {
+    background-color: #333;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 25px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #555;
+}
+.about-card {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+.skills-section {
+    margin-bottom: 30px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill-card {
+    background-color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.projects-section {
+    margin-bottom: 30px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+.contact-section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.contact-section a {
+    text-decoration: none;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+}
+@media (max-width: 600px) {
+
+    body {
+        margin: 15px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .projects-container {
+        flex-direction: column;
+    }
+}
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+}
+
+#contactForm input,
+#contactForm textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#formMessage {
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+   <header>
+    <h1>Nikita Awaghade</h1>
+    <p>Computer Science & Engineering Student</p>
+    <p>Java | Python | Web Development</p>
+
+    <button onclick="showWelcome()">Say Hello</button>
+</header>
+
+   <section id="about" class="about-card">
+    <h2>About Me</h2>
+
+    <p>
+        I am a Computer Science and Engineering student interested
+        in software development and web development.
+    </p>
+</section>
+
+    <section id="skills" class="skills-section">
+
+    <h2>Skills</h2>
+
+    <div class="skills-container">
+
+        <div class="skill">Java</div>
+        <div class="skill">Python</div>
+        <div class="skill">C++</div>
+        <div class="skill">HTML</div>
+        <div class="skill">SQL</div>
+
+    </div>
+
+</section>
+
+   <section id="projects" class="projects-section">
+
+    <h2>Projects</h2>
+
+    <div class="projects-container">
+
+        <div class="project">
+            <h3>Student Grade Calculator</h3>
+            <p>
+                A Python-based application that calculates
+                total marks, percentage and grade.
+            </p>
+            <p><strong>Technology:</strong> Python</p>
+        </div>
+
+        <div class="project">
+            <h3>Student Management System</h3>
+            <p>
+                A Java-based console application to add,
+                display, search and delete student records.
+            </p>
+            <p><strong>Technology:</strong> Java</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:awaghadenikita06@gmail.com">awaghadenikita06@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/your-name/" target="_blank">My LinkedIn Profile</a></p>
+    <p>GitHub: <a href="https://github.com/nikita-awaghade" target="_blank">nikita-awaghade</a></p>
+</section>
+```
+
+<form id="contactForm">
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" rows="5" required></textarea>
+
+    <button type="submit">Send Message</button>
+
+</form>
+
+<p id="formMessage"></p>
+</section>
+<footer>
+    <p>© 2026 Nikita Awaghade. All Rights Reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+
+</html>

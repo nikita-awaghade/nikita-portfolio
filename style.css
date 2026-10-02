@@ -1,0 +1,288 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    color: #333;
+}
+
+/* Navigation */
+nav {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 19px;
+    color: #666;
+    margin: 8px 0;
+}
+/* Button */
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #00bcd4;
+}
+
+/* Common Sections */
+section {
+    width: 85%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+/* About */
+.about-card {
+    background-color: white;
+    padding: 35px;
+    border-radius: 10px;
+    border-left: 5px solid #00bcd4;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.about-card p {
+    color: #555;
+    line-height: 1.8;
+}
+
+section h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+/* Skills */
+.skills-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill {
+    background-color: white;
+    color: #333;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.skill:hover {
+    background-color: #333;
+    color: white;
+    transform: translateY(-5px);
+}
+/* Projects */
+.projects-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 250px;
+    border-left: 5px solid #00bcd4;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.project h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.project p {
+    color: #555;
+}
+
+/* Contact */
+.contact-section {
+    background-color: white;
+    padding: 35px;
+    border-radius: 10px;
+    border-left: 5px solid #00bcd4;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.contact-section p {
+    margin: 12px 0;
+}
+
+.contact-section a {
+    color: #008cba;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
+
+
+/* Contact Form */
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 550px;
+    margin-top: 25px;
+    padding: 25px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+#contactForm label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+    outline: none;
+    border-color: #00bcd4;
+}
+
+#contactForm button {
+    width: 150px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    background-color: #00bcd4;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: #ddd;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    section {
+        width: 92%;
+    }
+
+    .skills-container {
+    flex-direction: row;
+}
+
+.projects-container {
+    flex-direction: column;
+}
+
+.skill {
+    flex: 1;
+    min-width: 120px;
+    text-align: center;
+}
+}
